@@ -43,6 +43,12 @@ const currentPagePath = getPathnameWithoutExtension(Astro.url);
             <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/ghidra' }} href="/ghidra">Ghidra Decompilation</a></li>
           </ul>
         </li>
+        <li class="nav-link dropdown>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tutorials/Guides</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/basicmoddersguide' }} href="/basicmoddersguide">Basic Modder's Guide</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="d-flex navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
