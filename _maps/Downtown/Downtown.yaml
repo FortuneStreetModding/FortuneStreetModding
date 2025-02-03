@@ -1,0 +1,1442 @@
+---
+name:
+  en: Downtown
+desc:
+  en: "Downtown: Ride around and explore the city's many buildings, filled with things to enjoy! Be sure to leave before closing time!"
+theme: Mario
+ruleSet: Standard
+initialCash: 2500
+targetAmount: 30000
+baseSalary: 600
+salaryIncrement: 200
+maxDiceRoll: 9
+frbFiles:
+  - Downtown
+  - Downtown2
+background: bg005
+music:
+  download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
+    - https://nikkums.io/cswt/BGM/XXX.music.zip
+    - https://drive.google.com/uc?export=download&id=XXX&confirm=1
+# As an example, extract 1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy from 
+# https://drive.google.com/file/d/1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy/view?usp=sharing
+# Paste in the XXX part of the google link
+# The 5 lines that contain this "#" should be crossed out after the "#".
+  map: dtown_map
+  stock: dtown_stock
+  ventureCards: dtown_ventureCards
+  auction: dtown_auction
+  targetMet: dtown_targetMet
+  guestAppear: dtown_guestAppear
+  promotionMii: dtown_promotionMii
+  promotionMario: dtown_promotionMario
+  promotionDragonQuest: dtown_promotionDragonQuest
+  forcedBuyout: dtown_forcedBuyout
+  domination: dtown_domination
+  bankruptcy: dtown_bankruptcy
+mapIcon: Downtown
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Waluigi
+  opponent2: Peach
+  opponent3: Yangus
+  clearRank: 2
+ventureCards:
+  - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
+  - 1  #   2 Venture on! Roll the die again and move forward.
+  - 1  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
+  - 1  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
+  - 1  #   5 Venture through space! Zoom over to any shop or vacant plot!
+  - 0  #   6 Venture through space! Zoom over to any venture or suit square!
+  - 0  #   7 Special bonus! Your shops all grow by 7%!
+  - 1  #   8 Venture on! Everyone's shop prices increase by 30%! Now roll the die and move again.
+  - 1  #   9 Venture on! Everyone's shops close for the day! Now roll the die and move again.
+  - 1  #  10 Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
+  - 1  #  11 Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
+  - 1  #  12 Capital venture! You can invest capital in any of your shops.
+  - 0  #  13 Misadventure! The values of all your shops drop by 13%!
+  - 1  #  14 Misadventure! You give everyone 30G each!
+  - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
+  - 0  #  16 Random venture! Shops expand in three districts picked at random!
+  - 1  #  17 Special bonus! You receive half of your salary!
+  - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
+  - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
+  - 0  #  20 Revaluation venture! You can expand any one of your shops by 20%.
+  - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
+  - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
+  - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
+  - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
+  - 1  #  25 Misadventure! Your shop prices halve until your next turn!
+  - 1  #  26 Lucky venture! You get a big commission until your next turn!
+  - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
+  - 0  #  28 Cameo adventure! A goodybag appears!
+  - 1  #  29 Freebie! Take a Heart!
+  - 1  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
+  - 1  #  31 Random venture! Shops expand by 10% in a district picked at random!
+  - 1  #  32 Random venture! Shops expand by 20% in a district picked at random!
+  - 1  #  33 Cashback venture! You can sell a shop back to the bank for three times its shop value.
+  - 1  #  34 Dicey adventure! Roll 1/3/5 and your shops close for the day. Roll 2/4/6 and everyone else's shops close.
+  - 0  #  35 Stock venture! You can sell stocks you own at 35% above the market value.
+  - 0  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
+  - 0  #  37 Random venture! Shops expand by 30% in a district picked at random!
+  - 0  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
+  - 0  #  39 Suit venture! Buy a Suit Yourself card for 100G.
+  - 1  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
+  - 1  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
+  - 1  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
+  - 1  #  43 Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!
+  - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
+  - 1  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
+  - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
+  - 1  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
+  - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
+  - 1  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
+  - 1  #  50 Venture on! Move forward the same number of squares again.
+  - 0  #  51 Venture on! Move forward 1 square more.
+  - 0  #  52 Venture on! Move forward another 2 squares.
+  - 1  #  53 Venture through space! Zoom over to the bank!
+  - 0  #  54 Venture through space! Pay 100G to zoom straight to the bank!
+  - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
+  - 1  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
+  - 1  #  57 Venture through space! Zoom to any square you like.
+  - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
+  - 1  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
+  - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
+  - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
+  - 0  #  62 Special bonus! You receive a 20% dividend on your stocks!
+  - 1  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
+  - 0  #  64 Random venture! Stock prices increase by 30% in a district picked at random!
+  - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
+  - 1  #  66 Special bonus! You receive 10 of the most valuable stocks!
+  - 1  #  67 Stock venture! You can buy stocks in a district of your choice.
+  - 0  #  68 Special arcade adventure! You're invited to play Memory Block!
+  - 0  #  69 Stock venture! You can sell stocks you own at 20% above the market value.
+  - 0  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
+  - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
+  - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
+  - 1  #  73 Property venture! You can buy any unowned shop or vacant plot.
+  - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
+  - 0  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
+  - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
+  - 0  #  77 Freebie! Take five of each district's stocks.
+  - 1  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
+  - 0  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
+  - 1  #  80 Freebie! Take a Spade!
+  - 1  #  81 Misadventure! All other players can only move forward 1 on their next turn.
+  - 1  #  82 Freebie! Take a Club!
+  - 1  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
+  - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
+  - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
+  - 1  #  86 Moneymaking venture! Take 100G from all other players!
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  88 Misadventure! All other players swap places!
+  - 0  #  89 Freebie! All players take a Suit Yourself card!
+  - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
+  - 0  #  91 Cameo adventure! A healslime appears!
+  - 0  #  92 Cameo adventure! Lakitu appears!
+  - 0  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
+  - 1  #  94 Freebie! Take a Diamond!
+  - 1  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
+  - 0  #  96 Misadventure! All players scramble to another player's location!
+  - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
+  - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
+  - 1  #  99 Freebie! What's inside...?
+  - 1  # 100 Freebie! Take a Suit Yourself card!
+  - 0  # 101 Special bonus! Your shops all grow by 21%!
+  - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
+  - 0  # 103 Misadventure! The values of all your shops drop by 25%!
+  - 0  # 104 Misadventure! You give everyone 80G each!
+  - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
+  - 0  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
+  - 0  # 107 Revaluation venture! You can expand any one of your shops by 30%.
+  - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
+  - 0  # 109 Revaluation venture! You can expand any one of your shops by 75%.
+  - 0  # 110 Special bonus! You receive 77 times the number of shops you own in gold coins from the bank!
+  - 0  # 111 Cashback venture! You can sell a shop back to the bank for 500G more than its shop value.
+  - 0  # 112 Special bonus! You receive 100 times the number of shops you own in gold coins!
+  - 0  # 113 Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
+  - 0  # 114 Moneymaking venture! Take your level times 40G from all other players!
+  - 0  # 115 Misadventure! All other players can only move forward 7 on their next turn.
+  - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
+  - 1  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
+  - 0  # 118 Lucky venture! You get a really big commission until your next turn!
+  - 0  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
+  - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
+  - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
+  - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
+  - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
+  - 1  # 124 Suit venture! Buy a Suit Yourself card for 50G.
+  - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
+  - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
+  - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
+  - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+districtNames:
+  en:
+    - District A
+    - District B
+    - District C
+    - District D
+    - District E
+    - District F
+    - District G
+    - District H
+  de:
+    - Bezirk A
+    - Bezirk B
+    - Bezirk C
+    - Bezirk D
+    - Bezirk E
+    - Bezirk F
+    - Bezirk G
+    - Bezirk H
+  fr:
+    - Quartier A
+    - Quartier B
+    - Quartier C
+    - Quartier D
+    - Quartier E
+    - Quartier F
+    - Quartier G
+    - Quartier H
+  it:
+    - Quartiere A
+    - Quartiere B
+    - Quartiere C
+    - Quartiere D
+    - Quartiere E
+    - Quartiere F
+    - Quartiere G
+    - Quartiere H
+  jp:
+    - エリアＡ
+    - エリアＢ
+    - エリアＣ
+    - エリアＤ
+    - エリアＥ
+    - エリアＦ
+    - エリアＧ
+    - エリアＨ
+  es:
+    - Distrito A
+    - Distrito B
+    - Distrito C
+    - Distrito D
+    - Distrito E
+    - Distrito F
+    - Distrito G
+    - Distrito H
+shopNames:
+  en:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: scrap-paper shop
+    6: wool shop
+    7: bottle store
+    8: secondhand book shop
+    9: scrap-metal supplier
+    10: stationery shop
+    11: general store
+    12: florist's
+    13: ice-cream shop
+    14: comic-book shop
+    15: dairy
+    16: doughnut shop
+    17: pizza shack
+    18: bakery
+    19: grocery store
+    20: pharmacy
+    21: fish market
+    22: toy shop
+    23: bookshop
+    24: cosmetics boutique
+    25: T-shirt shop
+    26: fruit stall
+    27: photography studio
+    28: coffee shop
+    29: butcher shop
+    30: restaurant
+    31: barbershop
+    32: hat boutique
+    33: hardware store
+    34: gift shop
+    35: launderette
+    36: shoe shop
+    37: clothing store
+    38: optician's
+    39: clockmaker's
+    40: furniture shop
+    41: sports shop
+    42: locksmith's
+    43: glassmaker's
+    44: sushi restaurant
+    45: art gallery
+    46: leatherware boutique
+    47: pet shop
+    48: nail salon
+    49: spice shop
+    50: music shop
+    51: surf shop
+    52: boating shop
+    53: cartographer's
+    54: alloy rims shop
+    55: fashion boutique
+    56: waxworks
+    57: lens shop
+    58: kaleidoscope shop
+    59: crystal ball shop
+    60: <未設定>600G
+    61: gemstone supplier
+    62: taxidermy studio
+    63: <未設定>630G
+    64: <未設定>640G
+    65: antiques dealer's
+    66: <未設定>660G
+    67: <未設定>670G
+    68: goldsmith's
+    69: <未設定>690G
+    70: fossil shop
+    71: <未設定>710G
+    72: music-box shop
+    73: <未設定>730G
+    74: <未設定>740G
+    75: marionette workshop
+    76: health shop
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: organic food shop
+    81: bridal boutique
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: autograph shop
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: meteorite shop
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: department store
+    99: SYSTEM_MSG_NAME_shop_name_990g
+    100: SYSTEM_MSG_NAME_shop_name_1000g
+  de:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: Resterampe
+    6: Kurzwaren
+    7: Trödelladen
+    8: Antiquariat
+    9: Schrotthändler
+    10: Schreibwaren
+    11: Gemischtwaren
+    12: Blumenladen
+    13: Eisdiele
+    14: Konditorei
+    15: Käseladen
+    16: Süßwarenladen
+    17: Pizzeria
+    18: Bäckerei
+    19: Gemüseladen
+    20: Apotheke
+    21: Fischmarkt
+    22: Spielzeugladen
+    23: Buchhandlung
+    24: Parfümerie
+    25: Scherzartikel
+    26: Obstgeschäft
+    27: Fotoladen
+    28: Café
+    29: Metzgerei
+    30: Restaurant
+    31: Friseur
+    32: Hutmacher
+    33: Baumarkt
+    34: Andenkenladen
+    35: Reinigung
+    36: Schuhladen
+    37: Schneiderei
+    38: Optiker
+    39: Uhrmacher
+    40: Möbelladen
+    41: Sportgeschäft
+    42: Schlosserei
+    43: Glaserei
+    44: Sushi-Laden
+    45: Künstlerbedarf
+    46: Lederwaren
+    47: Tierhandlung
+    48: Nagelstudio
+    49: Teegeschäft
+    50: Plattenladen
+    51: Bademoden
+    52: Taucherbedarf
+    53: Reisebüro
+    54: Autowerkstatt
+    55: Modehaus
+    56: Wachsfigurenkabinett
+    57: Hörgeräteladen
+    58: Kunstgalerie
+    59: Kristallgeschäft
+    60: <未設定>600G
+    61: Juwelier
+    62: Pelzhändler
+    63: <未設定>630G
+    64: <未設定>640G
+    65: Antiquitäten
+    66: <未設定>660G
+    67: <未設定>670G
+    68: Goldschmied
+    69: <未設定>690G
+    70: Fossilienhandlung
+    71: <未設定>710G
+    72: Spieluhrenhandlung
+    73: <未設定>730G
+    74: <未設定>740G
+    75: Puppenladen
+    76: Reformhaus
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: Bioladen
+    81: Brautmoden
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: Druckerei
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: Meteoritenladen
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: Kaufhaus
+    99: SYSTEM_MSG_NAME_shop_name_990g
+    100: SYSTEM_MSG_NAME_shop_name_1000g
+  fr:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: boutique de loisirs créatifs
+    6: mercerie
+    7: dépôt de verre à recycler
+    8: bouquiniste
+    9: ferrailleur
+    10: papeterie
+    11: épicerie
+    12: fleuriste
+    13: marchand de glace
+    14: boutique de B.D.
+    15: crémerie
+    16: marchand de beignets
+    17: pizzeria
+    18: boulangerie
+    19: marchand de légumes
+    20: pharmacie
+    21: poissonnerie
+    22: boutique de jouets
+    23: librairie
+    24: parfumerie
+    25: boutique de t-shirts
+    26: marchand de fruits
+    27: photographe
+    28: café
+    29: boucherie
+    30: restaurant
+    31: coiffeur
+    32: modiste
+    33: quincaillerie
+    34: boutique de cadeaux
+    35: laverie
+    36: boutique de chaussures
+    37: boutique de prêt-à-porter
+    38: opticien
+    39: horloger
+    40: boutique de meubles
+    41: boutique de sport
+    42: serrurier
+    43: vitrier
+    44: restaurant japonais
+    45: galerie d'art
+    46: maroquinerie
+    47: animalerie
+    48: salon de manucure
+    49: boutique d'épices
+    50: boutique de musique
+    51: boutique de surf
+    52: boutique de nautisme
+    53: boutique de cartographie
+    54: boutique de tuning
+    55: boutique de mode
+    56: boutique de bougies
+    57: boutique de lentilles
+    58: boutique de kaléidoscopes
+    59: boutique d'ésotérisme
+    60: <未設定>600G
+    61: joaillerie
+    62: taxidermiste
+    63: <未設定>630G
+    64: <未設定>640G
+    65: brocante et antiquités
+    66: <未設定>660G
+    67: <未設定>670G
+    68: orfèvrerie
+    69: <未設定>690G
+    70: boutique de fossiles
+    71: <未設定>710G
+    72: boutique de carillons
+    73: <未設定>730G
+    74: <未設定>740G
+    75: boutique de poupées
+    76: herboristerie
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: boutique bio
+    81: boutique nuptiale
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: boutique de dédicaces
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: boutique de météorites
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: grand magasin
+    99: SYSTEM_MSG_NAME_shop_name_990g
+    100: SYSTEM_MSG_NAME_shop_name_1000g
+  it:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: negozio di carta usata
+    6: merceria
+    7: negozio di vetro usato
+    8: negozio di libri usati
+    9: bottega del ferrovecchio
+    10: cartoleria
+    11: emporio
+    12: negozio di fiori
+    13: gelateria
+    14: negozio di fumetti
+    15: latteria
+    16: negozio di ciambelle
+    17: pizzeria
+    18: panetteria
+    19: negozio di verdure
+    20: farmacia
+    21: pescheria
+    22: negozio di giocattoli
+    23: libreria
+    24: profumeria
+    25: negozio di magliette
+    26: bottega della frutta
+    27: negozio di fotografia
+    28: bar
+    29: macelleria
+    30: ristorante
+    31: barbiere
+    32: cappelleria
+    33: ferramenta
+    34: negozio di regali
+    35: lavanderia
+    36: negozio di calzature
+    37: negozio di abbigliamento
+    38: negozio di occhiali
+    39: negozio di orologi
+    40: negozio di arredamento
+    41: negozio di articoli sportivi
+    42: negozio di serrature
+    43: vetreria
+    44: sushi bar
+    45: galleria d'arte
+    46: negozio di borse
+    47: negozio di animali
+    48: salone di bellezza
+    49: emporio delle spezie
+    50: negozio di musica
+    51: negozio di surf
+    52: negozio di nautica
+    53: negozio di cartografia
+    54: rivendita di autoricambi
+    55: boutique
+    56: negozio di candele
+    57: negozio di lenti
+    58: negozio di caleidoscopi
+    59: negozio di sfere
+    60: <未設定>600G
+    61: rivendita di gemme
+    62: bottega di imbalsamatura
+    63: <未設定>630G
+    64: <未設定>640G
+    65: bottega d'antiquariato
+    66: <未設定>660G
+    67: <未設定>670G
+    68: oreficeria
+    69: <未設定>690G
+    70: bottega dei fossili
+    71: <未設定>710G
+    72: negozio di carillon
+    73: <未設定>730G
+    74: <未設定>740G
+    75: negozio di bambole
+    76: erboristeria
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: negozio biologico
+    81: atelier della sposa
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: negozio di stampe
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: negozio di meteoriti
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: bazar
+    99: SYSTEM_MSG_NAME_shop_name_990g
+    100: SYSTEM_MSG_NAME_shop_name_1000g
+  jp:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: かみくず屋
+    6: 毛糸屋
+    7: あきビン屋
+    8: 古本屋
+    9: くずてつ屋
+    10: ぶんぼうぐ屋
+    11: ざっか屋
+    12: 花屋
+    13: アイスクリーム屋
+    14: ケーキ屋
+    15: ぎゅうにゅう屋
+    16: ドーナツ屋
+    17: ピザ屋
+    18: パン屋
+    19: 八百屋
+    20: やっきょく
+    21: さかな屋
+    22: おもちゃ屋
+    23: 本屋
+    24: 化粧品屋
+    25: Ｔシャツ屋
+    26: くだもの屋
+    27: しゃしん屋
+    28: コーヒーショップ
+    29: にく屋
+    30: レストラン
+    31: 床屋
+    32: ぼうし屋
+    33: ペンキ屋
+    34: ギフトショップ
+    35: クリーニング屋
+    36: くつ屋
+    37: ようふく屋
+    38: めがね屋
+    39: とけい屋
+    40: 家具屋
+    41: スポーツショップ
+    42: カギ屋
+    43: ガラス屋
+    44: すし屋
+    45: 画材屋
+    46: かばん屋
+    47: ペットショップ
+    48: ネイルサロン
+    49: スパイス屋
+    50: 楽器屋
+    51: サーフショップ
+    52: マリンショップ
+    53: 古地図屋
+    54: タイヤ屋
+    55: ブティック
+    56: キャンドル屋
+    57: レンズ屋
+    58: まんげきょう屋
+    59: 水晶屋
+    60: <未設定>600G
+    61: 宝石屋
+    62: はくせい屋
+    63: <未設定>630G
+    64: <未設定>640G
+    65: アンティークショップ
+    66: <未設定>660G
+    67: <未設定>670G
+    68: ゆびわ屋
+    69: <未設定>690G
+    70: 化石屋
+    71: <未設定>710G
+    72: オルゴール屋
+    73: <未設定>730G
+    74: <未設定>740G
+    75: ドールショップ
+    76: サプリメント屋
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: オーガニックストア
+    81: ブライダルショップ
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: ブロマイド屋
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: 隕石屋
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: なんでも屋
+    99: 使用不可
+    100: 使用不可
+  es:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: recicladora de papel
+    6: mercería
+    7: recicladora de vidrio
+    8: librería de viejo
+    9: chatarrería
+    10: papelería
+    11: economato
+    12: floristería
+    13: heladería
+    14: tienda de cómics
+    15: lechería
+    16: bollería
+    17: pizzería
+    18: panadería
+    19: verdulería
+    20: farmacia
+    21: pescadería
+    22: juguetería
+    23: librería
+    24: perfumería
+    25: tienda de camisetas
+    26: frutería
+    27: tienda de fotografía
+    28: cafetería
+    29: carnicería
+    30: restaurante
+    31: peluquería
+    32: sombrerería
+    33: ferretería
+    34: tienda de regalos
+    35: tintorería
+    36: zapatería
+    37: tienda de ropa
+    38: óptica
+    39: relojería
+    40: tienda de muebles
+    41: tienda de deportes
+    42: cerrajería
+    43: cristalería
+    44: tienda de sushi
+    45: galería de arte
+    46: marroquinería
+    47: tienda de animales
+    48: salón de manicura
+    49: especiería
+    50: tienda de discos
+    51: tienda de surf
+    52: tienda náutica
+    53: tienda de cartografía
+    54: tienda de llantas
+    55: boutique de moda
+    56: cerería
+    57: tienda de lentes
+    58: tienda de caleidoscopios
+    59: tienda esotérica
+    60: <未設定>600G
+    61: joyería
+    62: estudio de taxidermia
+    63: <未設定>630G
+    64: <未設定>640G
+    65: anticuario
+    66: <未設定>660G
+    67: <未設定>670G
+    68: platería
+    69: <未設定>690G
+    70: tienda de fósiles
+    71: <未設定>710G
+    72: tienda de gramolas
+    73: <未設定>730G
+    74: <未設定>740G
+    75: taller de marionetas
+    76: parafarmacia
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: tienda bio
+    81: tienda de trajes de novia
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: tienda de pósteres
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: tienda de meteoritos
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: grandes almacenes
+    99: SYSTEM_MSG_NAME_shop_name_990g
+    100: SYSTEM_MSG_NAME_shop_name_1000g
+capitalShopNames:
+  en:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: Scrap-paper shop
+    6: Wool shop
+    7: Bottle store
+    8: Secondhand book shop
+    9: Scrap-metal supplier
+    10: Stationery shop
+    11: General store
+    12: Florist's
+    13: Ice-cream shop
+    14: Comic-book shop
+    15: Dairy
+    16: Doughnut shop
+    17: Pizza shack
+    18: Bakery
+    19: Grocery store
+    20: Pharmacy
+    21: Fish market
+    22: Toy shop
+    23: Bookshop
+    24: Cosmetics boutique
+    25: T-shirt shop
+    26: Fruit stall
+    27: Photography studio
+    28: Coffee shop
+    29: Butcher shop
+    30: Restaurant
+    31: Barbershop
+    32: Hat boutique
+    33: Hardware store
+    34: Gift shop
+    35: Launderette
+    36: Shoe shop
+    37: Clothing store
+    38: Optician's
+    39: Clockmaker's
+    40: Furniture shop
+    41: Sports shop
+    42: Locksmith's
+    43: Glassmaker's
+    44: Sushi restaurant
+    45: Art gallery
+    46: Leatherware boutique
+    47: Pet shop
+    48: Nail salon
+    49: Spice shop
+    50: Music shop
+    51: Surf shop
+    52: Boating shop
+    53: Cartographer's
+    54: Alloy rims shop
+    55: Fashion boutique
+    56: Waxworks
+    57: Lens shop
+    58: Kaleidoscope shop
+    59: Crystal ball shop
+    60: <未設定>600G
+    61: Gemstone supplier
+    62: Taxidermy studio
+    63: <未設定>630G
+    64: <未設定>640G
+    65: Antiques dealer's
+    66: <未設定>660G
+    67: <未設定>670G
+    68: Goldsmith's
+    69: <未設定>690G
+    70: Fossil shop
+    71: <未設定>710G
+    72: Music-box shop
+    73: <未設定>730G
+    74: <未設定>740G
+    75: Marionette workshop
+    76: Health shop
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: Organic food shop
+    81: Bridal boutique
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: Autograph shop
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: Meteorite shop
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: Department store
+    99: SYSTEM_MSG_NAME_shop_name_990A
+    100: SYSTEM_MSG_NAME_shop_name_1000A
+  de:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: Resterampe
+    6: Kurzwaren
+    7: Trödelladen
+    8: Antiquariat
+    9: Schrotthändler
+    10: Schreibwaren
+    11: Gemischtwaren
+    12: Blumenladen
+    13: Eisdiele
+    14: Konditorei
+    15: Käseladen
+    16: Süßwarenladen
+    17: Pizzeria
+    18: Bäckerei
+    19: Gemüseladen
+    20: Apotheke
+    21: Fischmarkt
+    22: Spielzeugladen
+    23: Buchhandlung
+    24: Parfümerie
+    25: Scherzartikel
+    26: Obstgeschäft
+    27: Fotoladen
+    28: Café
+    29: Metzgerei
+    30: Restaurant
+    31: Friseur
+    32: Hutmacher
+    33: Baumarkt
+    34: Andenkenladen
+    35: Reinigung
+    36: Schuhladen
+    37: Schneiderei
+    38: Optiker
+    39: Uhrmacher
+    40: Möbelladen
+    41: Sportgeschäft
+    42: Schlosserei
+    43: Glaserei
+    44: Sushi-Laden
+    45: Künstlerbedarf
+    46: Lederwaren
+    47: Tierhandlung
+    48: Nagelstudio
+    49: Teeladen
+    50: Plattenladen
+    51: Bademoden
+    52: Taucherbedarf
+    53: Reisebüro
+    54: Autowerkstatt
+    55: Modehaus
+    56: Wachsfigurenkabinett
+    57: Hörgeräteladen
+    58: Kunstgalerie
+    59: Kristallgeschäft
+    60: <未設定>600G
+    61: Juwelier
+    62: Pelzhändler
+    63: <未設定>630G
+    64: <未設定>640G
+    65: Antiquitäten
+    66: <未設定>660G
+    67: <未設定>670G
+    68: Goldschmied
+    69: <未設定>690G
+    70: Fossilienhandlung
+    71: <未設定>710G
+    72: Spieluhrenhandlung
+    73: <未設定>730G
+    74: <未設定>740G
+    75: Puppenladen
+    76: Reformhaus
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: Bioladen
+    81: Brautmoden
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: Druckerei
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: Meteoritenladen
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: Kaufhaus
+    99: SYSTEM_MSG_NAME_shop_name_990A
+    100: SYSTEM_MSG_NAME_shop_name_1000A
+  fr:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: Boutique de loisirs créatifs
+    6: Mercerie
+    7: Dépôt de verre à recycler
+    8: Bouquiniste
+    9: Ferrailleur
+    10: Papeterie
+    11: Épicerie
+    12: Fleuriste
+    13: Marchand de glace
+    14: Boutique de B.D.
+    15: Crémerie
+    16: Boutique de beignets
+    17: Pizzeria
+    18: Boulangerie
+    19: Marchand de légumes
+    20: Pharmacie
+    21: Poissonnerie
+    22: Boutique de jouets
+    23: Librairie
+    24: Parfumerie
+    25: Boutique de t-shirts
+    26: Marchand de fruits
+    27: Photographe
+    28: Café
+    29: Boucherie
+    30: Restaurant
+    31: Coiffeur
+    32: Modiste
+    33: Quincaillerie
+    34: Boutique de cadeaux
+    35: Laverie
+    36: Boutique de chaussures
+    37: Boutique de prêt-à-porter
+    38: Opticien
+    39: Horloger
+    40: Boutique de meubles
+    41: Boutique de sport
+    42: Serrurier
+    43: Vitrier
+    44: Restaurant japonais
+    45: Galerie d'art
+    46: Maroquinerie
+    47: Animalerie
+    48: Salon de manucure
+    49: Boutique d'épices
+    50: Boutique de musique
+    51: Boutique de surf
+    52: Boutique de nautisme
+    53: Boutique de cartographie
+    54: Boutique de tuning
+    55: Boutique de mode
+    56: Boutique de bougies
+    57: Boutique de lentilles
+    58: Boutique de kaléidoscope
+    59: Boutique d'ésotérisme
+    60: <未設定>600G
+    61: Joaillerie
+    62: Taxidermiste
+    63: <未設定>630G
+    64: <未設定>640G
+    65: Brocante et antiquités
+    66: <未設定>660G
+    67: <未設定>670G
+    68: Forgeron
+    69: <未設定>690G
+    70: Boutique de fossiles
+    71: <未設定>710G
+    72: Boutique de carillons
+    73: <未設定>730G
+    74: <未設定>740G
+    75: Boutique de poupées
+    76: Herboristerie
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: Boutique bio
+    81: Boutique nuptiale
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: Boutique de dédicaces
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: Boutique de météorites
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: Grand magasin
+    99: SYSTEM_MSG_NAME_shop_name_990A
+    100: SYSTEM_MSG_NAME_shop_name_1000A
+  it:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: Negozio di carta usata
+    6: Merceria
+    7: Negozio di vetro usato
+    8: Negozio di libri usati
+    9: Bottega del ferrovecchio
+    10: Cartoleria
+    11: Emporio
+    12: Negozio di fiori
+    13: Gelateria
+    14: Negozio di fumetti
+    15: Latteria
+    16: Negozio di ciambelle
+    17: Pizzeria
+    18: Panetteria
+    19: Negozio di verdure
+    20: Farmacia
+    21: Pescheria
+    22: Negozio di giocattoli
+    23: Libreria
+    24: Profumeria
+    25: Negozio di magliette
+    26: Bottega della frutta
+    27: Negozio di fotografia
+    28: Bar
+    29: Macelleria
+    30: Ristorante
+    31: Barbiere
+    32: Cappelleria
+    33: Ferramenta
+    34: Negozio di regali
+    35: Lavanderia
+    36: Negozio di calzature
+    37: Negozio di abbigliamento
+    38: Negozio di occhiali
+    39: Negozio di orologi
+    40: Negozio di arredamento
+    41: Negozio di articoli sportivi
+    42: Negozio di serrature
+    43: Vetreria
+    44: Sushi bar
+    45: Galleria d'arte
+    46: Negozio di borse
+    47: Negozio di animali
+    48: Salone di bellezza
+    49: Emporio delle spezie
+    50: Negozio di musica
+    51: Negozio di surf
+    52: Negozio di nautica
+    53: Negozio di cartografia
+    54: Rivendita di autoricambi
+    55: Boutique
+    56: Negozio di candele
+    57: Negozio di lenti
+    58: Negozio di caleidoscopi
+    59: Negozio di sfere
+    60: <未設定>600G
+    61: Rivendita di gemme
+    62: Bottega di imbalsamatura
+    63: <未設定>630G
+    64: <未設定>640G
+    65: Bottega d'antiquariato
+    66: <未設定>660G
+    67: <未設定>670G
+    68: Oreficeria
+    69: <未設定>690G
+    70: Bottega dei fossili
+    71: <未設定>710G
+    72: Negozio di carillon
+    73: <未設定>730G
+    74: <未設定>740G
+    75: Negozio di bambole
+    76: Erboristeria
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: Negozio biologico
+    81: Atelier della sposa
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: Negozio di stampe
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: Negozio di meteoriti
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: Bazar
+    99: SYSTEM_MSG_NAME_shop_name_990A
+    100: SYSTEM_MSG_NAME_shop_name_1000A
+  jp:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: かみくず屋
+    6: 毛糸屋
+    7: あきビン屋
+    8: 古本屋
+    9: くずてつ屋
+    10: ぶんぼうぐ屋
+    11: ざっか屋
+    12: 花屋
+    13: アイスクリーム屋
+    14: ケーキ屋
+    15: ぎゅうにゅう屋
+    16: ドーナツ屋
+    17: ピザ屋
+    18: パン屋
+    19: 八百屋
+    20: やっきょく
+    21: さかな屋
+    22: おもちゃ屋
+    23: 本屋
+    24: 化粧品屋
+    25: Ｔシャツ屋
+    26: くだもの屋
+    27: しゃしん屋
+    28: コーヒーショップ
+    29: にく屋
+    30: レストラン
+    31: 床屋
+    32: ぼうし屋
+    33: ペンキ屋
+    34: ギフトショップ
+    35: クリーニング屋
+    36: くつ屋
+    37: ようふく屋
+    38: めがね屋
+    39: とけい屋
+    40: 家具屋
+    41: スポーツショップ
+    42: カギ屋
+    43: ガラス屋
+    44: すし屋
+    45: 画材屋
+    46: かばん屋
+    47: ペットショップ
+    48: ネイルサロン
+    49: スパイス屋
+    50: 楽器屋
+    51: サーフショップ
+    52: マリンショップ
+    53: 古地図屋
+    54: タイヤ屋
+    55: ブティック
+    56: キャンドル屋
+    57: レンズ屋
+    58: まんげきょう屋
+    59: 水晶屋
+    60: <未設定>600G
+    61: 宝石屋
+    62: はくせい屋
+    63: <未設定>630G
+    64: <未設定>640G
+    65: アンティークショップ
+    66: <未設定>660G
+    67: <未設定>670G
+    68: ゆびわ屋
+    69: <未設定>690G
+    70: 化石屋
+    71: <未設定>710G
+    72: オルゴール屋
+    73: <未設定>730G
+    74: <未設定>740G
+    75: ドールショップ
+    76: サプリメント屋
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: オーガニックストア
+    81: ブライダルショップ
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: ブロマイド屋
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: 隕石屋
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: なんでも屋
+    99: 使用不可
+    100: 使用不可
+  es:
+    1: <未設定>10G
+    2: <未設定>20G
+    3: <未設定>30G
+    4: <未設定>40G
+    5: Recicladora de papel
+    6: Mercería
+    7: Recicladora de vidrio
+    8: Librería de viejo
+    9: Chatarrería
+    10: Papelería
+    11: Economato
+    12: Floristería
+    13: Heladería
+    14: Tienda de cómics
+    15: Lechería
+    16: Bollería
+    17: Pizzería
+    18: Panadería
+    19: Verdulería
+    20: Farmacia
+    21: Pescadería
+    22: Juguetería
+    23: Librería
+    24: Perfumería
+    25: Tienda de camisetas
+    26: Frutería
+    27: Tienda de fotografía
+    28: Cafetería
+    29: Carnicería
+    30: Restaurante
+    31: Peluquería
+    32: Sombrerería
+    33: Ferretería
+    34: Tienda de regalos
+    35: Tintorería
+    36: Zapatería
+    37: Tienda de ropa
+    38: Óptica
+    39: Relojería
+    40: Tienda de muebles
+    41: Tienda de deportes
+    42: Cerrajería
+    43: Cristalería
+    44: Tienda de sushi
+    45: Galería de arte
+    46: Marroquinería
+    47: Tienda de animales
+    48: Salón de manicura
+    49: Especiería
+    50: Tienda de discos
+    51: Tienda de surf
+    52: Tienda náutica
+    53: Tienda de cartografía
+    54: Tienda de llantas
+    55: Boutique de moda
+    56: Cerería
+    57: Tienda de lentes
+    58: Tienda de caleidoscopios
+    59: Tienda esotérica
+    60: <未設定>600G
+    61: Joyería
+    62: Estudio de taxidermia
+    63: <未設定>630G
+    64: <未設定>640G
+    65: Anticuario
+    66: <未設定>660G
+    67: <未設定>670G
+    68: Platería
+    69: <未設定>690G
+    70: Tienda de fósiles
+    71: <未設定>710G
+    72: Tienda de gramolas
+    73: <未設定>730G
+    74: <未設定>740G
+    75: Taller de marionetas
+    76: Parafarmacia
+    77: <未設定>770G
+    78: <未設定>780G
+    79: <未設定>790G
+    80: Tienda bio
+    81: Tienda de trajes de novia
+    82: <未設定>820G
+    83: <未設定>830G
+    84: <未設定>840G
+    85: Tienda de pósteres
+    86: <未設定>860G
+    87: <未設定>870G
+    88: <未設定>880G
+    89: <未設定>890G
+    90: Tienda de meteoritos
+    91: <未設定>910G
+    92: <未設定>920G
+    93: <未設定>930G
+    94: <未設定>940G
+    95: <未設定>950G
+    96: <未設定>960G
+    97: <未設定>970G
+    98: Grandes almacenes
+    99: SYSTEM_MSG_NAME_shop_name_990A
+    100: SYSTEM_MSG_NAME_shop_name_1000A
+...
